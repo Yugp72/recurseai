@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="RecurseAI logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="url(#bg)"/>
+
+  <g stroke="#334155" stroke-width="8" opacity="0.65">
+    <line x1="256" y1="110" x2="160" y2="210"/>
+    <line x1="256" y1="110" x2="352" y2="210"/>
+    <line x1="160" y1="210" x2="110" y2="315"/>
+    <line x1="160" y1="210" x2="205" y2="315"/>
+    <line x1="352" y1="210" x2="307" y2="315"/>
+    <line x1="352" y1="210" x2="402" y2="315"/>
+  </g>
+
+  <circle cx="256" cy="110" r="26" fill="url(#node)"/>
+  <circle cx="160" cy="210" r="22" fill="url(#node)"/>
+  <circle cx="352" cy="210" r="22" fill="url(#node)"/>
+
+  <circle cx="110" cy="315" r="18" fill="url(#leaf)"/>
+  <circle cx="205" cy="315" r="18" fill="url(#leaf)"/>
+  <circle cx="307" cy="315" r="18" fill="url(#leaf)"/>
+  <circle cx="402" cy="315" r="18" fill="url(#leaf)"/>
+
+  <rect x="248" y="335" width="16" height="72" rx="8" fill="#22c55e"/>
+
+  <text x="256" y="448" text-anchor="middle" font-size="40" font-family="Inter, Segoe UI, Arial, sans-serif" font-weight="700" fill="#e2e8f0">R</text>
+</svg>

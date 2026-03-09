@@ -29,16 +29,16 @@ type LLMProvider interface {
 	MaxTokens() int
 }
 
-func Complete(ctx context.Context, req CompletionRequest) (CompletionResponse, error) {
-	return CompletionResponse{}, nil
-}
-func Embed(ctx context.Context, input string) (EmbeddingResult, error) {
-	return EmbeddingResult{}, nil
-}
-func Name() string {
-	return "base"
-}
+// func Complete(ctx context.Context, req CompletionRequest) (CompletionResponse, error) {
+// 	return CompletionResponse{}, nil
+// }
+// func Embed(ctx context.Context, input string) (EmbeddingResult, error) {
+// 	return EmbeddingResult{}, nil
+// }
+// func Name() string {
+// 	return "base"
+// }
 
-func MaxTokens() int {
-	return 0
-}
+// func MaxTokens() int {
+// 	return 0
+// }

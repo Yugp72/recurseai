@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Go build artifacts
+bin/
+dist/
+*.exe
+*.out
+*.test
+*.prof
+*.cover
+coverage.out
+
+# Project binary
+recurseai
+
+# Databases and runtime data
+*.db
+*.sqlite
+*.sqlite3
+/data/
+
+# Logs
+*.log
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+

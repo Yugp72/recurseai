@@ -1,0 +1,36 @@
+ingestion:
+  chunkSize: 2200
+  chunkOverlap: 80
+  workerPoolSize: 2
+
+tree:
+  branchFactor: 8
+  maxLevels: 3
+  # summarizeProvider: openai
+  # summarizeModel: gpt-4o-mini
+  summarizeProvider: gemini
+  summarizeModel: gemini-2.5-flash
+
+query:
+  beamWidth: 3
+  similarityThreshold: 0.2
+  answerProvider: gemini
+  answerModel: gemini-2.5-flash
+
+providers:
+  openai:
+    apiKey: "" # Set your OpenAI API key here or via OPENAI_API_KEY env var
+    model: gpt-4o-mini
+  anthropic:
+    apiKey: "" # Set your Anthropic API key here or via ANTHROPIC_API_KEY env var
+    model: claude-3-5-sonnet-20241022
+  gemini:
+    apiKey: "" # Set your Gemini API key here or via GEMINI_API_KEY env var
+    model: gemini-2.5-flash
+  ollama:
+    baseUrl: http://localhost:11434
+    model: llama3
+
+storage:
+  vectorDb: ./data/vectors.db
+  treeDb: ./data/tree.db
