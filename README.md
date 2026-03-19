@@ -231,11 +231,13 @@ xychart-beta
 ## 🔗 Footer
 
 **Project:** RecurseAI — Hierarchical Context Compression for Long Documents  
-**Author:** Yug Patel  
+**Contributors:**  
+- **Yug Patel** — Designed and implemented the recursive context compression engine, the hierarchical summary tree builder, beam-search traversal, concurrent ingest pipeline, all four LLM provider adapters (OpenAI, Gemini, Anthropic, Ollama), the SQLite vector and tree stores, the REST API, and the CLI.  
+- **Deven Desai** — Researched vector database options (pgvector, Chroma, Qdrant, sqlite-vec) and recommended sqlite-vec for zero-dependency embedded storage. Designed the SQLite schema and defined the serialization strategy for float32 embeddings.  
+- **Aarsh Sheth** — Researched the MIT recursive LLM paper and translated its core ideas into the tree algorithm parameters used in the project. Defined branching factor, depth levels, beam width, and similarity threshold values. Proposed the split-provider cost strategy (cheap model for ingest, powerful model for final answers) and calculated the cost benchmarks.  
+
 **Language:** Go 1.24  
-**License:** MIT  
-**Repository:** [github.com/Yugp72/recurseai](https://github.com/Yugp72/recurseai)  
-**Created:** 2026 | **Last Updated:** March 2026
+
 
 **Architecture Inspired By:**
 - [RAPTOR](https://arxiv.org/abs/2401.18059) — Recursive Abstractive Processing for Tree-Organized Retrieval
